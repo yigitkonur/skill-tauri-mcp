@@ -1,6 +1,10 @@
 ---
 name: tauri-devtools
-description: "Activate when a user works on a Tauri v2 app and needs to debug IPC calls, inspect Rust backend logs, view app configuration, trace command latency, or understand runtime behavior that browser DevTools cannot show. Use this skill whenever the user mentions debugging Tauri, slow commands, Rust logs not appearing, IPC inspection, or Tauri app configuration issues. This skill covers CrabNebula DevTools — the Rust-side and IPC observability layer that fills the gap browser DevTools leaves."
+description: "CrabNebula DevTools integration for Tauri v2 apps. Gives AI agents visibility into the Rust side — console logs with tracing spans, IPC call timings, live config inspection, and frontend source browsing. Use when debugging Tauri apps or when browser devtools isn't enough."
+license: MIT
+metadata:
+  author: yigitkonur
+  version: "1.0"
 ---
 
 # CrabNebula DevTools for Tauri v2
@@ -77,7 +81,7 @@ The gRPC server runs in a **separate thread** specifically so it does not interf
 
 **Zero impact on release builds** — the `#[cfg(debug_assertions)]` gate ensures the plugin is completely stripped from production binaries. No tracing subscriber, no gRPC server, no dependencies compiled in.
 
-For a deeper dive into the internal pipeline (BridgeLayer to Layer to Aggregator to Server), see references/architecture-deep-dive.md.
+For a deeper dive into the internal pipeline (BridgeLayer to Layer to Aggregator to Server), see references/devtools-architecture-deep-dive.md.
 
 ## Free vs Premium Tier
 
@@ -464,8 +468,8 @@ Agents sometimes add serde_json::to_string_pretty() calls to log IPC payloads ma
 
 | File | Contents |
 |---|---|
-| references/tab-reference.md | Detailed per-tab column reference, filtering syntax, keyboard shortcuts |
-| references/ipc-span-anatomy.md | IPC span structure, field details, timing interpretation, custom spans |
-| references/architecture-deep-dive.md | Internal tracing pipeline: BridgeLayer to Layer to Aggregator to Server |
-| references/common-debugging-scenarios.md | 12+ concrete debugging scenarios with symptoms, tabs, and fixes |
-| references/integration-patterns.md | Integration with tauri-plugin-log, custom subscribers, cfg patterns |
+| references/devtools-tab-reference.md | Detailed per-tab column reference, filtering syntax, keyboard shortcuts |
+| references/devtools-ipc-span-anatomy.md | IPC span structure, field details, timing interpretation, custom spans |
+| references/devtools-architecture-deep-dive.md | Internal tracing pipeline: BridgeLayer to Layer to Aggregator to Server |
+| references/devtools-common-debugging-scenarios.md | 12+ concrete debugging scenarios with symptoms, tabs, and fixes |
+| references/devtools-integration-patterns.md | Integration with tauri-plugin-log, custom subscribers, cfg patterns |

@@ -1,6 +1,10 @@
 ---
 name: tauri-mcp-bridge
-description: "Activate when a user wants an AI agent to directly interact with their running Tauri v2 app — take screenshots, execute JavaScript in the WebView, inspect the DOM, call Rust backend commands via IPC, monitor IPC events in real time, click UI elements, type keyboard input, automate UI interactions, read device logs, or pick elements visually. This skill enables the agent to SEE and DRIVE the app, not just read its source code. Use whenever the user says 'test my app', 'take a screenshot', 'click this button', 'call my Rust command', 'watch IPC events', 'debug my UI', 'read logs', 'select that element', or any variation of wanting the AI to interact with a live running Tauri application."
+description: "MCP bridge for live Tauri v2 app interaction. 20 tools for screenshots, clicking, typing, IPC command execution, event monitoring, and log reading through hypothesi/mcp-server-tauri. Use when AI agents need to see and drive a running Tauri app."
+license: MIT
+metadata:
+  author: yigitkonur
+  version: "1.0"
 ---
 
 # Tauri MCP Bridge — AI Agent ↔ Tauri App

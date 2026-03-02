@@ -5,7 +5,7 @@
 
 two companion skills that give ai agents deep observability and live control over tauri v2 apps. one plugs into crabnebula devtools for rust-side debugging — the console/calls/config/sources tabs that browser devtools fundamentally cannot show. the other bridges mcp so agents can screenshot, click, type, call rust commands, and monitor ipc on a running app through 20 tools.
 
-## what it does
+### what it does
 
 most ai agents working with tauri hit two walls. first, they can't see what's happening on the rust side — browser devtools only shows the webview, not the command handlers, event pipelines, or tracing spans that make tauri apps work. second, they can't interact with a running tauri app the way they can with a browser — no screenshots, no clicking, no command invocation.
 
@@ -17,7 +17,7 @@ this skill package solves both problems:
 
 together, they give an agent full-stack tauri debugging capability — see the rust side through devtools, drive the app side through mcp.
 
-## the 20 mcp tools
+### the 20 mcp tools
 
 | # | tool | category | what it does |
 |---|------|----------|-------------|
@@ -42,7 +42,7 @@ together, they give an agent full-stack tauri debugging capability — see the r
 | 19 | `ipc_get_backend_state` | ipc | get app metadata, version, environment |
 | 20 | `read_logs` | monitoring | read console/android/ios/system logs |
 
-## what makes this different
+### what makes this different
 
 - **grounded in real source code** — every tool name, schema, and parameter extracted from the actual hypothesi/mcp-server-tauri codebase. not a summary of docs, not a guess at what the api might look like. the skill files reference specific source files, actual type definitions, and real default values.
 
@@ -54,7 +54,7 @@ together, they give an agent full-stack tauri debugging capability — see the r
 
 - **platform-specific** — covers macos screen recording permission for screenshots, android adb port forwarding for device testing, linux javascript fallback when native screenshots aren't available, and ios simulator setup with proper device listing.
 
-## usage
+### usage
 
 ```
 "my tauri app's greet command returns an error but the frontend just shows 'something went wrong' — what's actually happening on the rust side?"
@@ -72,7 +72,7 @@ together, they give an agent full-stack tauri debugging capability — see the r
 "monitor all ipc calls while i click through the settings page, then show me which commands are slow"
 ```
 
-## file overview
+### file overview
 
 | file | lines | what it covers |
 |------|-------|---------------|
@@ -93,13 +93,13 @@ together, they give an agent full-stack tauri debugging capability — see the r
 
 **total: 5,172 lines across 14 skill files** (+ 260 lines in CLAUDE.md, AGENTS.md, README.md = **5,432 lines**).
 
-## scope
+### scope
 
 **built for:** tauri v2 apps that need rust-side debugging, ipc inspection, or ai agent interaction. covers both the observability gap (what browser devtools can't see) and the automation gap (agents that need to see and drive running apps).
 
 **not for:** tauri v1 apps (use `devtools` crate instead of `tauri-plugin-devtools`). not for browser-only web apps — use chrome devtools mcp or playwright mcp instead.
 
-## install
+### install
 
 ```bash
 npx skills add yigitkonur/skill-tauri-mcp
@@ -107,6 +107,6 @@ npx skills add yigitkonur/skill-tauri-mcp
 
 > works with claude code, cursor, codex, copilot, windsurf, and [30+ other agents](https://skills.sh).
 
-## license
+### license
 
 mit

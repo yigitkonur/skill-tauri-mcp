@@ -1,7 +1,10 @@
 # skill-tauri-mcp
 
-> **other skills by [@yigitkonur](https://github.com/yigitkonur):**
-> [generating copilot review config](https://github.com/yigitkonur/skill-copilot-review) · [testing mcp servers](https://github.com/yigitkonur/skill-mcp-server-tester) · [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [reviewing mcp-use python apps](https://github.com/yigitkonur/skill-mcp-use) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context)
+```bash
+npx skills add yigitkonur/skill-tauri-mcp
+```
+
+> [copilot review setup](https://github.com/yigitkonur/skill-copilot-review) · [devin review setup](https://github.com/yigitkonur/skill-devin-review-init) · [greptile review setup](https://github.com/yigitkonur/skill-greptile-init) · [mcp server testing](https://github.com/yigitkonur/skill-mcp-server-tester) · [mcp-use code review](https://github.com/yigitkonur/skill-mcp-use) · [design dna extraction](https://github.com/yigitkonur/skill-design-soul-saas) · [snapshot to nextjs](https://github.com/yigitkonur/skill-snapshot-to-nextjs)
 
 two companion skills that give ai agents deep observability and live control over tauri v2 apps. one plugs into crabnebula devtools for rust-side debugging — the console/calls/config/sources tabs that browser devtools fundamentally cannot show. the other bridges mcp so agents can screenshot, click, type, call rust commands, and monitor ipc on a running app through 20 tools.
 
@@ -98,14 +101,6 @@ together, they give an agent full-stack tauri debugging capability — see the r
 **built for:** tauri v2 apps that need rust-side debugging, ipc inspection, or ai agent interaction. covers both the observability gap (what browser devtools can't see) and the automation gap (agents that need to see and drive running apps).
 
 **not for:** tauri v1 apps (use `devtools` crate instead of `tauri-plugin-devtools`). not for browser-only web apps — use chrome devtools mcp or playwright mcp instead.
-
-## install
-
-```bash
-npx skills add yigitkonur/skill-tauri-mcp
-```
-
-> works with claude code, cursor, codex, copilot, windsurf, and [30+ other agents](https://skills.sh).
 
 ## license
 

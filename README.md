@@ -76,22 +76,22 @@ together, they give an agent full-stack tauri debugging capability — see the r
 
 | file | lines | what it covers |
 |------|-------|---------------|
-| `tauri-devtools/SKILL.md` | ~500 | architecture, installation, tab decision guide, 10 agent workflows, 8 anti-patterns, troubleshooting |
-| `tauri-devtools/references/tab-reference.md` | ~200 | per-tab documentation: columns, filtering, keyboard shortcuts |
-| `tauri-devtools/references/ipc-span-anatomy.md` | ~200 | span fields, normal/slow/error examples, waterfall reading |
-| `tauri-devtools/references/architecture-deep-dive.md` | ~200 | tracing subscriber pipeline, data flow, component roles |
-| `tauri-devtools/references/common-debugging-scenarios.md` | ~200 | 12+ scenarios with symptoms, tabs, root causes, fixes |
-| `tauri-devtools/references/integration-patterns.md` | ~200 | tauri-plugin-log compatibility, custom tracing, RUST_LOG |
-| `tauri-mcp-bridge/SKILL.md` | ~700 | 20 tools with schemas, 4-phase install, verification, workflows |
-| `tauri-mcp-bridge/references/tool-reference.md` | ~450 | complete tool reference: params, types, return examples |
-| `tauri-mcp-bridge/references/installation-checklist.md` | ~200 | 4-phase verifiable checklist with idempotency |
-| `tauri-mcp-bridge/references/dynamic-install-guide.md` | ~190 | adaptive detection: 5 checks + 6 adaptation rules |
-| `tauri-mcp-bridge/references/visual-tools-deep-dive.md` | ~300 | screenshot internals, dom snapshots, element picking |
-| `tauri-mcp-bridge/references/ipc-tools-deep-dive.md` | ~250 | ipc monitoring workflow, command execution, event emission |
-| `tauri-mcp-bridge/references/multi-app-and-mobile.md` | ~250 | multi-app architecture, android/ios setup, remote testing |
-| `tauri-mcp-bridge/references/security-and-troubleshooting.md` | ~300 | security model, 20-row troubleshooting matrix |
+| `tauri-devtools/SKILL.md` | 471 | architecture, installation, tab decision guide, 10 agent workflows, 8 anti-patterns, troubleshooting |
+| `tauri-devtools/references/tab-reference.md` | 176 | per-tab documentation: columns, filtering, keyboard shortcuts |
+| `tauri-devtools/references/ipc-span-anatomy.md` | 328 | span fields, normal/slow/error examples, custom spans, waterfall reading |
+| `tauri-devtools/references/architecture-deep-dive.md` | 188 | tracing subscriber pipeline, data flow, component roles |
+| `tauri-devtools/references/common-debugging-scenarios.md` | 214 | 14 scenarios with symptoms, tabs, root causes, fixes |
+| `tauri-devtools/references/integration-patterns.md` | 323 | tauri-plugin-log compatibility, custom tracing, RUST_LOG |
+| `tauri-mcp-bridge/SKILL.md` | 960 | 20 tools with schemas, 4-phase install, verification, 12 workflows, 24-row troubleshooting |
+| `tauri-mcp-bridge/references/tool-reference.md` | 609 | complete tool reference: params, types, annotations, return examples |
+| `tauri-mcp-bridge/references/installation-checklist.md` | 254 | 4-phase verifiable checklist with idempotency and mobile detection |
+| `tauri-mcp-bridge/references/dynamic-install-guide.md` | 188 | adaptive detection: 5 checks + 6 adaptation rules |
+| `tauri-mcp-bridge/references/visual-tools-deep-dive.md` | 434 | screenshot internals, dom snapshots, element picking, see→interact workflow |
+| `tauri-mcp-bridge/references/ipc-tools-deep-dive.md` | 423 | ipc monitoring workflow, command execution, event emission, backend state |
+| `tauri-mcp-bridge/references/multi-app-and-mobile.md` | 364 | multi-app architecture, android/ios setup, remote device testing |
+| `tauri-mcp-bridge/references/security-and-troubleshooting.md` | 240 | security model, 20-row troubleshooting matrix |
 
-**total: ~4,140 lines across 14 files.**
+**total: 5,172 lines across 14 skill files** (+ 260 lines in CLAUDE.md, AGENTS.md, README.md = **5,432 lines**).
 
 ## scope
 
